@@ -26,7 +26,9 @@
         <script>
             function load() {
                 var image = event.target;
-                image.setAttribute("src", image.getAttribute("data-src"));
+                if(image.getAttribute("src") != image.getAttribute("data-src")) {
+                    image.setAttribute("src", image.getAttribute("data-src"));
+                }
             }
         </script>
     </body>
